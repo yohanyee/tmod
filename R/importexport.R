@@ -43,7 +43,7 @@
 
 ## imports the GMT format of MSigDB
 .importMsigDBGMT <- function(file) {
-  stop("This does not work at the present.")
+#  stop("This does not work at the present.")
   msig <- list()
 
   con <- file(file, open="r")
@@ -68,7 +68,7 @@
   names(msig$MODULES2GENES) <- ids
 
   msig$GENES <- data.frame( ID=unique(unlist(msig$MODULES2GENES)))
-  msig <- new("tmod", msig)
+#  msig <- new("tmod", msig)
   msig
 }
 
